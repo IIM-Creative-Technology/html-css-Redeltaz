@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1.5px;
+}
+
+.titleFlex {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title {
+    border: 5px solid white;
+    font-size: 1.5em;
+    background: linear-gradient(#f13c9d, #ce2183);
+    color: white;
+    display: inline-block;
+    padding: 0 50px 0 50px;
+    transform: skewX(-15deg);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.container {
+    background: linear-gradient(#fcdd49, #f7d636, #f7d100, #e4b600);
+    border: solid white 3px;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 50px;
+    box-shadow: 5px 5px 10px black;
+    margin: 0 10% 75px 10%;
+}
+
+.end {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.end img {
+    width: 125px;
+    height: 100px;
+}
+
+.end div:nth-child(2) {
+    font-size: 1.75em;
+    color: #e2c102;
+    text-shadow: 1px 1px 10px black;
+}
+
+.endTrophy p {
+    font-size: 1.5em;
+}
+
+.endTrophy {
+    text-align: center;
+}
+
+.end div:nth-child(odd) {
+    margin-top: 200px;
+    color: rgb(51, 50, 50);
+    text-shadow: 1px 1px 10px black;
+}
+
+.end div:nth-child(1) {
+    margin-left: 150px;
+}
+
+.end div:nth-child(3) {
+    margin-right: 150px;
+}
+
+.tableau{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    font-size: 1.25em;
+}
+
+.mention {
+    background: linear-gradient(#fcdd49, #f7d636, #f7d100, #e4b600);
+    border: solid white 3px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mention p{
+    color: white;
+}
+
+@media (max-width:640px) {
+    .end{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .end div:nth-child(1){
+        margin: 0;
+        order: 2;
+    }
+
+    .end div:nth-child(3){
+        margin: 0;
+        order: 2;
+    }
+}
